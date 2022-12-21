@@ -2,7 +2,7 @@ export const Newsletter = () => {
 
   return (
 
-    <div className='flex w-full h-[23rem] pt-[4.5rem] px-32 bg-secondaryLight   '>
+    <div className='flex w-full h-[23rem] pt-[4.5rem] px-32 bg-secondaryLight'>
 
       <div className="mr-36 max-w-md ">
         <h2 className="mb-8"> Únete a nuestro newsletter </h2>
