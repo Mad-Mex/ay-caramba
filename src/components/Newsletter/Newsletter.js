@@ -1,3 +1,5 @@
+import "./Newsletter.css"
+
 export const Newsletter = () => {
 
   return (
