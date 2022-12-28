@@ -1,0 +1,4 @@
+.arrow {
+  @apply absolute top-[42%] text-3xl text-white brightness-90 cursor-pointer transition-all 
+  duration-100 ease-linear hover:brightness-100 hover:text-4xl;
+}

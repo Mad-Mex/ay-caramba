@@ -14,7 +14,13 @@ module.exports = {
         gray: "#B9BDBE",
         grayLight: "#D0D6D9",
         black: "#000000"  
+      },
+      fontFamily: {
+        "sans1": [
+          "Hey Comic Extrude"
+        ],
       }
+
     },
   },
   plugins: [],

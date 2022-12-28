@@ -37,4 +37,6 @@ cuadros para decoración; todos ellos pintados a mano.
 22-Object-fit
 23-Filter
 24-Cursor
-25-Pseudo-class
+25-Transform
+26-Placeholder
+27-Pseudo-class

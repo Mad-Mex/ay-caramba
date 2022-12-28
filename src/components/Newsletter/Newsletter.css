@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Hey Comic Extrude";
+  src: url(/public/fonts/Hey_Comic_Extrude.otf);
+}
+
+.input-title {
+  @apply mb-2 text-base;
+}
+
+.input {
+  @apply pl-5 w-[25rem] h-9;
+}
