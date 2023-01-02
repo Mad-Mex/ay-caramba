@@ -12,7 +12,7 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <Header />
+      <Header/>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/categoria/figuras" element={<FiguresPage />} />

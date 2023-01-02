@@ -7,3 +7,15 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+.fade-anim img {
+  animation: fadeAnim 0.5s ease-out;
+}
+@keyframes fadeAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
