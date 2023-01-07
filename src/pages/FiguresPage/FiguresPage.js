@@ -1,10 +1,23 @@
-import { NewProductCard } from "../../components/NewProduct/NewProductCard/NewProductCard"
-import { dataProduct } from "../../database/data.Product"
+import { useEffect, useState } from "react"
+import { ProductFilterList } from "../../components/ProductFilterList/ProductFilterList"
+import { getFigures } from "../../api/data"
 import "./FiguresPage.css"
 
 export const FiguresPage = () => {
 
-  const categories = ["Cine", "Series de Tv", "Manga-anime", "Videojuegos"]
+  const categories = ["Cine", "Comic", "Manga-anime", "Videojuegos"]
+  const [loading, setLoading] = useState(true)
+  const [allFigures, setAllFigures] = useState()
+
+  useEffect(() => {
+    getFigures()
+      .then(item => {
+        setAllFigures(item)
+        setLoading(false)
+      })
+      
+  }, [])
+  
 
   return (
 
@@ -43,18 +56,13 @@ export const FiguresPage = () => {
         
         {/* Card Products */}
         <div className="w-4/5">
-              <div className="flex justify-between flex-wrap">
-                { dataProduct.map((figure, index) => (
-                  <NewProductCard
-                  figure={ figure }
-                  index={ index }
+              <div>
+                <ProductFilterList
+                  loading={ loading }
+                  allFigures={ allFigures }
                   />
-                ))}
-
               </div>
         </div>
-
-      
 
       </div>
     </>

@@ -2,11 +2,11 @@ import { Link } from "react-router-dom"
 import "./NewProductCard.css"
 
 
-export const NewProductCard = ({ figure, index }) => {
+export const NewProductCard = ({ figure }) => {
 
   return (
 
-    <div key={ index } className='w-[15rem] h-[24rem] mb-8'>
+    <div key={ figure.name } className='w-[15rem] h-[24rem] mb-8'>
          
       { /* Card Top */} 
       <div className="relative cursor-pointer group">

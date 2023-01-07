@@ -10,6 +10,7 @@ cuadros para decoración; todos ellos pintados a mano.
 -React
 -React-router-dom
 -Tailwind CSS
+-Firestore
 
 #### Orden recomendado para escribir las propiedades CSS en Tailwind
 

@@ -5,8 +5,9 @@ import { PaintingsPage } from "./pages/PaintingsPage/PaintingsPage";
 import { ProductPage } from "./pages/ProductPage/ProductPage";
 import { ScrollToTop } from "./components/Navigation/ScrollToTop/ScrollToTop";
 import { Footer } from "./components/Footer/Footer";
-import "./App.css";
 import { Header } from "./components/Header/Header";
+import "./App.css";
+
 
 function App() {
   return (

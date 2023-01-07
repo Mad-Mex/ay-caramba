@@ -1,7 +1,9 @@
 import React from 'react'
 import { CategoryCard } from '../../components/Card/CategoryCard/CategoryCard'
-import { NewProductContainer } from '../../components/NewProduct/NewProductContainer/NewProductContainer'
-import { Newsletter } from '../../components/Newsletter/Newsletter'
+import { ContactForm } from '../../components/ContactForm/ContactForm'
+import { NewProductCardContainer } from '../../components/NewProduct/NewProductCardContainer/NewProductCardContainer'
+
+
 import { Slider } from '../../components/Slider/Slider'
 
 import "./HomePage.css"
@@ -18,7 +20,7 @@ export const HomePage = () => {
       </section>
 
       {/* Category Section  */}      
-      <section className='flex mt-32 mb-12 ml-64'>
+      <section className='flex mt-32 mb-12 ml-[18rem]'>
         <CategoryCard
           image= "/images/seiya_2.jpg"
           title= "Figuras"
@@ -34,13 +36,13 @@ export const HomePage = () => {
 
       { /* New Product */ }
       <section>
-        <NewProductContainer />
+        <NewProductCardContainer />
       </section>
 
 
-      { /*Newsletter Section*/ }
+      { /*ContactForm Section*/ }
       <section>
-        <Newsletter />
+        <ContactForm />
       </section>
 
 
