@@ -10,3 +10,7 @@
 .input {
   @apply pl-5 w-[25rem] h-9;
 }
+
+.error-text {
+  @apply mt-[0.375rem] text-xs text-warning;
+}
