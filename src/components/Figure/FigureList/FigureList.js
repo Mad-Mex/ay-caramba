@@ -1,19 +1,20 @@
-import { NewProductCard  } from "../NewProductCard/NewProductCard";
+import { FigureCard  } from "../FigureCard/FigureCard";
 import { Loader } from "../../Loader/Loader";
 
 
 
-export const NewProductCardList = ({ newFigure, loading }) => {
+export const FigureList = ({ allFigures, loading }) => {
   
   return (
-    <div className="flex justify-between mb-20">
+
+    <div className="flex flex-wrap ml-[6rem]">
 
       { loading ? <Loader /> :
       
-        newFigure.map( figure => {
+        allFigures.map( figure => {
           
           return(
-            <NewProductCard
+            <FigureCard
               key={ figure.id }
               figure={ figure }
              />

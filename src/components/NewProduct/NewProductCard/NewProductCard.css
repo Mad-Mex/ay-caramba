@@ -1,3 +1,0 @@
-.overlay {
-  @apply absolute top-0 opacity-0 transition-all duration-[0.4s] ease-linear;
-}

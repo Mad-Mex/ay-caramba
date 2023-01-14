@@ -14,6 +14,7 @@ module.exports = {
         tertiaryLight: "#F47A78",
         gray: "#B9BDBE",
         gray2: "#D8DEFF",
+        gray3: "#B0B0B04D",
         grayLight: "#D0D6D9",
         overlay: "#00000099",
         black: "#000000",
@@ -21,9 +22,8 @@ module.exports = {
         warning: "#ec0707"  
       },
       fontFamily: {
-        "sans1": [
-          "Hey Comic Extrude"
-        ],
+        "sans1": ["Hey Comic Extrude"],
+        "sans2": ["Poppins"]
       }
 
     },

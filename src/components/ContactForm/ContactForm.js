@@ -4,9 +4,7 @@ import { ModalSendMailSuccess } from "../Modal/ModalSendMailSuccess"
 import { ModalSendMailFailure } from "../Modal/ModalSendMailFailure"
 import { initialValues, validationSchema } from "./ContactFormValidation.data"
 import emailjs from "@emailjs/browser"
-
 import "./ContactForm.css"
-
 
 
 export const ContactForm = () => {
@@ -42,73 +40,69 @@ export const ContactForm = () => {
 
 
   return (
+     <form onSubmit={ formik.handleSubmit }>
 
-    <div className='flex w-full h-[42rem] pt-[4.5rem] px-32 bg-secondaryLight'>
+               <div className='flex justify-center mb-6 '>
+                    <input
+                    className='w-[29rem] h-[2.625rem] rounded-full border border-primary cursor-pointer text-center placeholder:text-black hover:border-primaryDark'
+                    placeholder='Nombre y apellido'
+                    name="name"
+                    type="text"
+                    onChange={ formik.handleChange }
+                    value={ formik.values.name } 
+                    />
+                     { formik.errors.name && formik.touched.name ? <p className="error-text"> Escribe tu nombre 
+                      </p> : null  }
+               </div>
 
-      { /*Contact Form - Text */ }
+               <div className='flex justify-center mb-6 '>
+                    <input
+                    className='w-[29rem] h-[2.625rem] rounded-full border border-primary cursor-pointer text-center placeholder:text-black hover:border-primaryDark'
+                    placeholder='Correo' 
+                    name="email"
+                    type="text"
+                    onChange={ formik.handleChange }
+                    value={ formik.values.email }
+                    />
+                     { formik.errors.email && formik.touched.email ? <p className="error-text"> Introduce un correo válido </p> : null  }
+               </div>
 
-      <div className="mr-36 max-w-md ">
-        <h2 className="mb-8 font-sans1 text-xl "> Ponte en contacto con nosotros </h2>
-        <p className='mb-4'> Si estás interesado por una figura o algún cuadro, o si deseas cotizar el precio
-        de cualquiera de nuestros artículos, escribe tu correo y mensaje.  </p>
-        <p > Consúltanos sin compromiso </p>
-      </div>
+               <div className='flex justify-center mb-6 '>
+                    <input
+                    className='w-[29rem] h-[2.625rem] rounded-full border border-primary cursor-pointer text-center placeholder:text-black hover:border-primaryDark'
+                    placeholder='Teléfono'
+                    name="phone"
+                    type="text"
+                    onChange={ formik.handleChange }
+                    value={ formik.values.phone } 
+                    />
+                     { formik.errors.phone && formik.touched.phone ? <p className="error-text"> Introduce un teléfono válido </p> : null  }
+               </div>
 
+               <div className='flex justify-center mb-8 '>
+                    <textarea
+                    className='pt-[7.5rem] w-[29rem] h-[17rem] rounded-[1.2rem] border border-primary cursor-pointer text-center placeholder:text-black hover:border-primaryDark'
+                    name="message"
+                    type="text"
+                    onChange={ formik.handleChange }
+                    value={ formik.values.message }
+                    > Mensaje 
+                    </textarea>
+                     { formik.errors.message && formik.touched.message ? <p className="error-text"> Por favor, deja tu mensaje </p> : null  }
+               </div>
 
-      { /*Contact Form - Form */ }
+               <div className='flex justify-center mt-8 '>
+                    <input
+                    className='w-[29rem] h-[2.625rem] rounded-full bg-tertiaryLight cursor-pointer text-center uppercase  placeholder:text-black hover:bg-tertiary'
+                    placeholder='Enviar'
+                    type="submit" 
+                    />
+               </div>
 
-      <form onSubmit={ formik.handleSubmit } >
-        <div className="mb-5">
-          <p className='mb-2 text-base '> Nombre </p>
-          <input 
-            className= "pl-5 w-[30rem] h-9 border border-black"   
-            name="name"
-            type="text"
-            onChange={ formik.handleChange }
-            value={ formik.values.name }
-            />
-            { formik.errors.name && formik.touched.name ? <p className="error-text"> Escribe tu nombre 
-            </p> : null  }
-        </div>
-
-
-        <div className='flex flex-col mb-5 '>
-          <p className="mb-2 text-base "> Correo </p>
-          <input 
-            className='pl-5 w-[30rem] h-9 border border-black'
-            name="email"
-            type="email"
-            onChange={ formik.handleChange }
-            value={ formik.values.email }
-            />
-          { formik.errors.email && formik.touched.email ? <p className="error-text"> Introduce un correo válido 
-          </p> : null  }
-        </div>
-
-
-         <div className="mb-5">
-          <p className='mb-2 text-base '> Mensaje </p>
-          <textarea 
-            className='pt-3 px-5 w-[30rem] h-48 border border-black'
-            name="message"
-            type="text"
-            onChange={ formik.handleChange }
-            value={ formik.values.message }
-          > 
-          </textarea>
-          { formik.errors.message && formik.touched.message ? <p className="error-text"> Por favor, deja tu mensaje 
-          </p> : null  }
-        </div>
-
-        <div className="flex items-center justify-center">
-          <input className='mt-5 w-44 h-10 border border-black  bg-white uppercase cursor-pointer
-          hover:bg-black hover:text-white' type="submit" value="Enviar" />
-        </div>
-      </form>
-
-      { openModal && <ModalSendMailSuccess setOpenModal={ setOpenModal } /> }
-      { error && <ModalSendMailFailure setOpenModal={ setOpenModal } setError={ setError }   /> }
-    </div>
+               { openModal && <ModalSendMailSuccess setOpenModal={ setOpenModal } /> }
+               { error && <ModalSendMailFailure setOpenModal={ setOpenModal } setError={ setError }  /> }      
+                
+    </form>
   )
 }
 

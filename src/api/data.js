@@ -2,7 +2,9 @@ import { db } from "./firebase";
 import { collection, doc, getDoc, getDocs, limit, orderBy, query, setDoc, where } from "firebase/firestore";
 
 
-const getFigures = async ()=> {
+//Function to get Figures
+
+export const getFigures = async ()=> {
     
     const colRef = query(collection(db, "figuras"), orderBy("name"))
 
@@ -23,47 +25,76 @@ const getFigures = async ()=> {
 
 
 
-const getFiguresByCategory = async (categoriaId)=> {
+export const getFiguresById = async (id) => {
+    const docRef = doc(db, "figuras", id)
+
+    try {
+        const docSnap = await getDoc(docRef)
+        
+        if(docSnap.exists()){
+            return {
+                id: id,
+                ...docSnap.data()
+            }
+        } else {
+            console.log("No se encontró la figura")
+        }
+        
+    } catch (error) {
+        console.log(error)     
+    }
+}
+
+
+//Functions to get Pictures
+
+export const getPictures = async ()=> {
     
-    const colRef = query(collection(db, "figuras"), where("category", "==", categoriaId ))
+    const colRef = query(collection(db, "cuadros"), orderBy("name"))
 
     try {
         const snapshot = await getDocs(colRef)
-        const figuresByCategory = snapshot.docs.filter( rawDoc => {
+        const allPictures = snapshot.docs.map( rawDoc => {
             return{
                 id: rawDoc.id,
                 ...rawDoc.data()
             }
         })
-        return figuresByCategory
+        return allPictures
         
     } catch (error) {
-        console.log("No se pueden mostrar las figuras")
+        console.log("No se pueden mostrar los cuadros")
     }
 }
 
 
-const getNewFigures = async () => {
-
-    const colRef = query(collection(db, "figuras"), where("isNew", "==", true))
+export const getPicturesById = async (id) => {
+    const docRef = doc(db, "cuadros", id)
 
     try {
-        const snapshot = await getDocs(colRef)
-        const newFigures = snapshot.docs.map( rawDoc => {
+        const docSnap = await getDoc(docRef)
+        
+        if(docSnap.exists()){
             return {
-                id: rawDoc.id,
-                ...rawDoc.data()
+                id: id,
+                ...docSnap.data()
             }
-        })
-        return newFigures
-
+        } else {
+            console.log("No se encontró el cuadro")
+        }
+        
     } catch (error) {
-        console.log("No se pueden mostrar las figuras recién añadidas")
+        console.log(error)     
     }
 }
 
 
 
-export { getFigures, getFiguresByCategory, getNewFigures }
+
+
+
+
+
+
 
 

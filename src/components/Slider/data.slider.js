@@ -9,7 +9,7 @@ export const data = [
     },
 
     {
-        "image" : "/images/vengadores.jpg"
+        "image" : "/images/vengadores_cuadros.jpg"
     },
 
 ]
