@@ -33,20 +33,15 @@ export const HeroImage = () => {
   
   return (
 
-    <div className='relative'>
-
-        { /*Background Image */ }    
-        <div>
-           <img src='/images/fondo_home.svg' alt='fondo con degradado' className='w-full h-full'/>    
-        </div>
+    <div className='background'>
 
 
         {/*3D Figures */}
-        <div className='hero-layout top-[2.7%]   '>
-          <h2 className='hero-title'> Figuras 3D  </h2>
+        <div className='py-12 pt-24 pl-[172px]'>
+          <h2 className='hero-title shadowText'> Figuras 3D  </h2>
         </div>
 
-        <div className='hero-layout top-[9%]  ' >
+        <div>
           <FigureListHome
             figureHome = { figureHome }
             loading = { loading } 
@@ -55,11 +50,11 @@ export const HeroImage = () => {
 
 
         { /* Pictures  */ }
-        <div className='hero-layout top-[33%]'>
-          <h2 className='hero-title'> Cuadros  </h2>
+        <div className='pb-12 pt-12 pl-[172px]'>
+          <h2 className='hero-title shadowText'> Cuadros  </h2>
         </div>
 
-         <div className='hero-layout top-[39%]  ' >
+         <div >
           <PictureListHome 
             pictureHome={ pictureHome }
             loading={ loading }
@@ -68,24 +63,23 @@ export const HeroImage = () => {
 
 
         { /*Hand-made Products */ }
-        <div className='flex'>
-
-          <div className='hero-layout top-[67%]'>
-            <h2 className='hero-title-2 mb-7 max-w-[28.5rem] leading-none '>Somos Fabricantes</h2>
-            <h3 className='max-w-[31rem] text-2xl font-normal leading-none'> Todas nuestras piezas están pintadas 
-              <span className='text-5xl font-semibold'> 100% a mano </span> 
+        <div className='py-36 px-12 flex justify-around items-center products'>
+          <div className='info'>
+            <h2 className=' mb-7 max-w-[28.5rem] text-[58px] leading-none shadowText font-semibold'>SOMOS FABRICANTES</h2>
+            <h3 className=' text-[34px] font-normal leading-none'> Todas nuestras piezas están pintadas 
+              <p className='pt-1 text-[48px] font-sans font-bold'> 100% A MANO </p> 
             </h3>
           </div>
 
-          <div className='absolute top-[64%] right-[7%]  '>
+          <div className='drop-shadow-2xl'>
             <img src='/images/hand_made_figure.png' alt='figura pintada a mano' 
-            className='w-[28rem] h-[18rem] rounded-lg  '  />
+            className=' rounded-3xl'  />
           </div>
         </div>
 
 
         {/* Info - shipping, contact, payment */} 
-        <div className='hero-layout bottom-[0.2%] max-w-[1200px] ' >
+        <div className='pb-36 pt-12 w-full' >
           <InfoContainer />
         </div>
         

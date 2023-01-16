@@ -5,7 +5,7 @@ export const FigureListHome = ({ figureHome, loading }) => {
 
   return (
 
-    <div className='flex w-[1200px] overflow-hidden '>
+    <div className='flex flex-wrap justify-center w-full'>
 
       { loading ? <Loader /> :
 

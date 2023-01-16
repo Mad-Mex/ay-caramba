@@ -1,6 +1,6 @@
-.hero-layout {
+/* .hero-layout {
   @apply absolute left-[8%];
-}
+} */
 
 .hero-title {
   @apply text-[3.5rem] font-semibold uppercase;
@@ -8,4 +8,22 @@
 
 .hero-title-2 {
   @apply text-[2.625rem] font-semibold uppercase;
+}
+
+.shadowText {
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.35);
+}
+
+.background {
+  background-image: url(/public/images/fondo_home.svg);
+}
+
+@media only screen and (max-width: 1110px) {
+  .products {
+      flex-direction: column;
+  }
+
+  .info {
+    padding-bottom: 4em;
+  }
 }

@@ -5,7 +5,7 @@ export const PictureList = ({ loading, allPictures }) => {
 
   return (
     
-    <div className='flex flex-wrap ml-[6rem]'>
+    <div className='flex flex-wrap justify-around'>
 
       { loading ? <Loader /> :
 

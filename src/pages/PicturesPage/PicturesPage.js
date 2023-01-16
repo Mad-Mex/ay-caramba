@@ -19,7 +19,7 @@ export const PicturesPage = () => {
   return (
     
     <div>
-      <h1 className="mt-9 -mb-[1.625rem] text-[4rem] text-primaryLight text-center uppercase"> Cuadros 
+      <h1 className="mt-9 -mb-[1.625rem] text-[4rem] text-primaryLight text-center uppercase font-semibold"> Cuadros 
       </h1>
       <div className="mb-20 w-full h-3 bg-primaryLight"></div>
 

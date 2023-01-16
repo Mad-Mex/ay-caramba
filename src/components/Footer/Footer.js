@@ -3,7 +3,7 @@ import "./Footer.css"
 const Footer = () => {
 
     return (
-        <footer className='flex w-full mt-12 bg-primaryLight justify-center footer'>
+        <footer className='flex w-full bg-primaryLight justify-center footer'>
             <div className='flex flex-col items-center py-8'>
                 <h1 className="text-xl text-white">Contactanos</h1>
                 <ul className="flex justify-center items-center w-full mt-3">

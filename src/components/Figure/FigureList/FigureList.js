@@ -7,7 +7,7 @@ export const FigureList = ({ allFigures, loading }) => {
   
   return (
 
-    <div className="flex flex-wrap ml-[6rem]">
+    <div className="flex flex-wrap justify-around">
 
       { loading ? <Loader /> :
       

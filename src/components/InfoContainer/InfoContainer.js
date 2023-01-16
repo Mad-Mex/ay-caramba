@@ -4,14 +4,14 @@ export const InfoContainer = () => {
 
   return (
 
-    <div className='flex w-[71.5rem] justify-between'>
+    <div className='flex justify-around'>
 
         { dataInfo.map( item => (
 
           <div className='flex flex-col items-center'>
-            <img src={ item.image } alt={ `icono ${ item.title}`}  className='mb-3 w-[6rem] h-[6rem] rounded-full shadow-3xl object-cover'      />
-            <h3 className='mb-2 text-[1.375rem] font-bold text-center uppercase '> { item.title } </h3>
-            <p className='max-w-[240px] text-sm font-normal leading-5 text-center'> { item.content } 
+            <img src={ item.image } alt={ `icono ${ item.title}`}  className='drop-shadow-2xl mb-3 w-[9rem] h-[9rem] rounded-full shadow-3xl object-cover'      />
+            <h3 className='mb-2 text-[32px] font-bold text-center uppercase '> { item.title } </h3>
+            <p className='max-w-[240px] text-base font-medium leading-5 text-center'> { item.content } 
             </p>
           </div>
             

@@ -24,7 +24,7 @@ export const Slider = () => {
 
   return (
 
-    <div className='relative flex flex-col mb-16 w-full h-[27.5rem]'>
+    <div className='relative flex flex-col w-full h-[27.5rem]'>
     
         { data.map((slide, index) => (
             <div key={ index } className="w-full h-[27.5rem] " >
