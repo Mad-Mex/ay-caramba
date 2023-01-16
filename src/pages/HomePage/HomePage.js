@@ -1,4 +1,4 @@
-import React from 'react'
+import { HeroImage } from '../../components/HeroImage/HeroImage'
 import { Slider } from '../../components/Slider/Slider'
 import "./HomePage.css"
 
@@ -12,6 +12,13 @@ export const HomePage = () => {
       <section>
         <Slider />
       </section>
+
+      { /* Hero Section */ }
+      <section>
+        <HeroImage />
+      </section>
+
+      
 
 
      

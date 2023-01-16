@@ -1,0 +1,11 @@
+.hero-layout {
+  @apply absolute left-[8%];
+}
+
+.hero-title {
+  @apply text-[3.5rem] font-semibold uppercase;
+}
+
+.hero-title-2 {
+  @apply text-[2.625rem] font-semibold uppercase;
+}

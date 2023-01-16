@@ -3,10 +3,30 @@ import { collection, doc, getDoc, getDocs, limit, orderBy, query, setDoc, where 
 
 
 //Function to get Figures
-
 export const getFigures = async ()=> {
     
     const colRef = query(collection(db, "figuras"), orderBy("name"))
+
+    try {
+        const snapshot = await getDocs(colRef)
+        const allFigures = snapshot.docs.map( rawDoc => {
+            return{
+                id: rawDoc.id,
+                ...rawDoc.data()
+            }
+        })
+        return allFigures
+        
+    } catch (error) {
+        console.log("No se pueden mostrar las figuras")
+    }
+}
+
+
+
+export const getFiguresHome = async ()=> {
+    
+    const colRef = query(collection(db, "figuras"), limit(4))
 
     try {
         const snapshot = await getDocs(colRef)
@@ -47,7 +67,6 @@ export const getFiguresById = async (id) => {
 
 
 //Functions to get Pictures
-
 export const getPictures = async ()=> {
     
     const colRef = query(collection(db, "cuadros"), orderBy("name"))
@@ -64,6 +83,27 @@ export const getPictures = async ()=> {
         
     } catch (error) {
         console.log("No se pueden mostrar los cuadros")
+    }
+}
+
+
+
+export const getPicturesHome = async ()=> {
+    
+    const colRef = query(collection(db, "cuadros"), limit(4))
+
+    try {
+        const snapshot = await getDocs(colRef)
+        const allPictures = snapshot.docs.map( rawDoc => {
+            return{
+                id: rawDoc.id,
+                ...rawDoc.data()
+            }
+        })
+        return allPictures
+        
+    } catch (error) {
+        console.log("No se pueden mostrar los cuadros solicitados")
     }
 }
 

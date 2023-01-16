@@ -9,7 +9,8 @@ export const PictureCard = ({ picture }) => {
 
     <Link to={ `/detalle/cuadros/${ picture.id }` }  >
 
-      <div className='mr-[6rem] mb-16 p-6 w-[20rem] h-[22rem] rounded-xl bg-gray3 cursor-pointer'>
+      <div className='mr-[6rem] mb-16 p-6 w-[20rem] h-[21.375rem] rounded-xl bg-gray3 shadow-3xl
+       cursor-pointer'>
         <img src={ picture.image } alt={ picture.name } className="w-full h-[16rem] rounded-xl"/>
         <h3 className="mt-6 text-base text-center"> 
         { name.slice(0, count) + (name.length > count ? "..." : "")  } </h3>
