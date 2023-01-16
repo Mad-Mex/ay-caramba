@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom"
-import "./NavBar"
+import "./NavBar.css"
 
 const NavBar = () => {
     let Links =[
@@ -28,7 +28,7 @@ const NavBar = () => {
         {
           Links.map((link)=>(
             <li key={link.name} className=' text-2xl xl:my-0 my-7 sm:mx-2'>
-              <a href={link.link} className='font-sans font-bold text-tertiary ease-out hover:ease-in hover:text-white hover:bg-tertiary rounded-3xl px-3 py-2 duration-500'>{link.name}</a>
+              <a href={link.link} className='font-sans3 font-semibold text-tertiary px-3 nav'>{link.name}</a>
             </li>
           ))
         }

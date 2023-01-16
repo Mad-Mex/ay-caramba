@@ -16,6 +16,7 @@
 
 .background {
   background-image: url(/public/images/fondo_home.svg);
+  background-repeat: no-repeat;
 }
 
 @media only screen and (max-width: 1110px) {
@@ -25,5 +26,12 @@
 
   .info {
     padding-bottom: 4em;
+  }
+}
+
+@media only screen and (max-width: 663px) {
+  .titleFigure {
+    padding-left: 0;
+    text-align: center;
   }
 }

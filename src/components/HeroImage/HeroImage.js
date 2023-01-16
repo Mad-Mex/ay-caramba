@@ -37,7 +37,7 @@ export const HeroImage = () => {
 
 
         {/*3D Figures */}
-        <div className='py-12 pt-24 pl-[172px]'>
+        <div className='py-12 pt-24 pl-[210px] titleFigure'>
           <h2 className='hero-title shadowText'> Figuras 3D  </h2>
         </div>
 
@@ -50,7 +50,7 @@ export const HeroImage = () => {
 
 
         { /* Pictures  */ }
-        <div className='pb-12 pt-12 pl-[172px]'>
+        <div className='pb-12 pt-12 px-[210px]'>
           <h2 className='hero-title shadowText'> Cuadros  </h2>
         </div>
 
