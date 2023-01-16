@@ -24,7 +24,9 @@ module.exports = {
       },
       fontFamily: {
         "sans1": ["Hey Comic Extrude"],
-        "sans2": ["Poppins"]
+        "sans2": ["Poppins"],
+        "sans3": ["Poppins"]
+
       },
       boxShadow: {
         "2xl" : "0 1px 2px 1px rgba(0,0,0, 0.2)",
