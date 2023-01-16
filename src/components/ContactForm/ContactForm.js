@@ -42,7 +42,7 @@ export const ContactForm = () => {
   return (
      <form onSubmit={ formik.handleSubmit }>
 
-               <div className='flex justify-center mb-6 '>
+               <div className='flex flex-col items-center mb-6 '>
                     <input
                     className='w-[29rem] h-[2.625rem] rounded-full border border-primary cursor-pointer text-center placeholder:text-black hover:border-primaryDark'
                     placeholder='Nombre y apellido'
@@ -55,7 +55,7 @@ export const ContactForm = () => {
                       </p> : null  }
                </div>
 
-               <div className='flex justify-center mb-6 '>
+               <div className='flex flex-col items-center mb-6 '>
                     <input
                     className='w-[29rem] h-[2.625rem] rounded-full border border-primary cursor-pointer text-center placeholder:text-black hover:border-primaryDark'
                     placeholder='Correo' 
@@ -67,7 +67,7 @@ export const ContactForm = () => {
                      { formik.errors.email && formik.touched.email ? <p className="error-text"> Introduce un correo válido </p> : null  }
                </div>
 
-               <div className='flex justify-center mb-6 '>
+               <div className='flex flex-col items-center mb-6 '>
                     <input
                     className='w-[29rem] h-[2.625rem] rounded-full border border-primary cursor-pointer text-center placeholder:text-black hover:border-primaryDark'
                     placeholder='Teléfono'
@@ -79,7 +79,7 @@ export const ContactForm = () => {
                      { formik.errors.phone && formik.touched.phone ? <p className="error-text"> Introduce un teléfono válido </p> : null  }
                </div>
 
-               <div className='flex justify-center mb-8 '>
+               <div className='flex flex-col items-center mb-8 '>
                     <textarea
                     className='pt-[7.5rem] w-[29rem] h-[17rem] rounded-[1.2rem] border border-primary cursor-pointer text-center placeholder:text-black hover:border-primaryDark'
                     name="message"
@@ -91,7 +91,7 @@ export const ContactForm = () => {
                      { formik.errors.message && formik.touched.message ? <p className="error-text"> Por favor, deja tu mensaje </p> : null  }
                </div>
 
-               <div className='flex justify-center mt-8 '>
+               <div className='flex flex-col items-center mt-8 '>
                     <input
                     className='w-[29rem] h-[2.625rem] rounded-full bg-tertiaryLight cursor-pointer text-center uppercase  placeholder:text-black hover:bg-tertiary'
                     placeholder='Enviar'

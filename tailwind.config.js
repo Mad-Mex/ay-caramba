@@ -18,8 +18,9 @@ module.exports = {
         grayLight: "#D0D6D9",
         overlay: "#00000099",
         black: "#000000",
-        success: "#06ab02",
-        warning: "#ec0707"  
+        whatsapp: "#25D366",
+        success: "#06Ab02",
+        warning: "#EC0707"  
       },
       fontFamily: {
         "sans1": ["Hey Comic Extrude"],
