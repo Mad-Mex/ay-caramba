@@ -24,25 +24,36 @@ export const ContactPage = () => {
             <div className='flex justify-center items-center w-1/2  '>
               <div className='flex flex-wrap w-[26rem] h-[25rem]'>
 
-                <div className='mb-[4.875rem] mr-[10.3rem]'>
-                  <img src='/images/instagram.png' alt='instagram' className='icon-social-media '/>
+                <button className='mb-[4.875rem] mr-[10.3rem]'>
+                  <a href="https://instagram.com/ay.caramba.arg?igshid=YmMyMTA2M2Y="  target="_blank" rel='noopener noreferrer' >
+                    <img src='/images/instagram.png' alt='instagram' className='icon-social-media '/>
+                  </a>
                   <p className='mt-[0.65rem]'>@AyCaramba</p>
-                </div>
+                </button>
 
-                <div className='mb-[4.875rem]'>
-                  <img src='/images/facebook_color.png' alt='facebook' className='icon-social-media'/>
+                <button className='mb-[4.875rem]'>
+                  <a href='' target="_blank" rel='noopener noreferrer'>
+                    <img src='/images/facebook_color.png' alt='facebook' className='icon-social-media'/>
+                  </a>
+                  
                   <p className='mt-[0.65rem]'>@AyCaramba</p>
-                </div>
+                </button>
 
-                <div className='mr-[10.3rem]'>
-                  <img src='/images/telegram.png' alt='instagram' className='icon-social-media'/>
+                <button className='mr-[10.3rem]'>
+                  <a href='' target="_blank" rel='noopener noreferrer'> 
+                    <img src='/images/telegram.png' alt='instagram' className='icon-social-media'/>
+                  </a>
+                 
                   <p className='mt-[0.65rem]'>@AyCaramba</p>
-                </div>
+                </button>
 
-                 <div>
-                  <img src='/images/whatsapp_color.png' alt='instagram' className='icon-social-media'/>
+                 <button>
+                  <a href='' target="_blank" rel='noopener noreferrer' >
+                    <img src='/images/whatsapp_color.png' alt='instagram' className='icon-social-media'/>
+                  </a>
+                  
                   <p className='mt-[0.65rem]'>@AyCaramba</p>
-                </div>
+                </button>
 
               </div>
             </div>
