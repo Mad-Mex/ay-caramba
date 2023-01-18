@@ -9,7 +9,7 @@ export const AboutUsPage = () => {
         <h1 className="mt-9 -mb-[1.625rem] text-[4rem] text-primaryLight text-center  uppercase font-semibold"> Nosotros </h1>
         <div className="mb-20 w-full h-3 bg-primaryLight"></div>
 
-        <div className='mx-24 pb-24 flex flex-col 2xl:flex-row'>
+        <div className='mx-24 mediaText pb-24 flex flex-col 2xl:flex-row'>
 
           <div className='pr-12 self-center paddingImg'>
             <div className='w-1/2 min-[280px]:w-full pb-12 drop-shadow-2xl'>

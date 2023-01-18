@@ -50,7 +50,7 @@ export const HeroImage = () => {
 
 
         { /* Pictures  */ }
-        <div className='pb-12 pt-12 px-[210px]'>
+        <div className='pb-12 pt-12 pl-[210px] titleFigure'>
           <h2 className='hero-title shadowText'> Cuadros  </h2>
         </div>
 
@@ -65,9 +65,9 @@ export const HeroImage = () => {
         { /*Hand-made Products */ }
         <div className='py-36 px-12 flex justify-around items-center products'>
           <div className='info'>
-            <h2 className=' mb-7 max-w-[28.5rem] text-[58px] leading-none shadowText font-semibold'>SOMOS FABRICANTES</h2>
-            <h3 className=' text-[34px] font-normal leading-none'> Todas nuestras piezas están pintadas 
-              <p className='pt-1 text-[48px] font-sans font-bold'> 100% A MANO </p> 
+            <h2 className=' mb-7 max-w-[28.5rem] text-[58px] max-[780px]:text-[40px] leading-none shadowText font-semibold'>SOMOS FABRICANTES</h2>
+            <h3 className=' text-[34px] max-[780px]:text-[24px] font-normal leading-none'> Todas nuestras piezas están pintadas 
+              <p className='pt-1 text-[38px] max-[780px]:text-[24px] font-sans font-bold'> 100% A MANO </p> 
             </h3>
           </div>
 

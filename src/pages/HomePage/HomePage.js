@@ -6,7 +6,7 @@ export const HomePage = () => {
 
   return (
 
-    <div>
+    <div className='overflow-hidden'>
 
       {/*Slider Section */}
       <section>

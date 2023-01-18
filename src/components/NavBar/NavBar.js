@@ -13,7 +13,7 @@ const NavBar = () => {
     let [open,setOpen]=useState(false);
   return (
     <div className='shadow-md w-full fixed top-0 z-10 left-0'>
-      <div className='sm:flex items-center py-5 px-10  bg-secondaryLight'>
+      <div className='sm:flex items-center py-5 px-10 paddingNavbar bg-secondaryLight'>
       <div className='text-2xl cursor-pointer flex items-center text-gray-800 xl:mr-16 md:mr-0'>
         <Link to="/">
           <img src="/images/Ay Caramba_color shadow.svg" alt="logoAyCaramba" className='max-w-none w-[185px]'/>

@@ -22,3 +22,9 @@
 .nav:hover:after{
     width: 100%;
 }
+
+@media only screen and (max-width: 580px) {
+    .paddingNavbar {
+      padding-left: 0.8em;
+    }
+  }

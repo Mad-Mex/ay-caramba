@@ -14,3 +14,9 @@
     padding-bottom: 48px;
   }
 }
+
+@media only screen and (max-width: 780px) {
+  .mediaText {
+    margin: 2em 2em;
+  }
+}
