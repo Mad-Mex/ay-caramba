@@ -2,7 +2,7 @@ export const dataInfo = [
     {
         image: "/images/contact_icon.png",
         title: "Contactanos",
-        content: "Si ya sabes lo que te gusta o tenes alguna duda contactae con nosotros por telefono, mail o WhatsApp"
+        content: "Si ya sabes lo que te gusta o tenes alguna duda contacta con nosotros por teléfono, mail o WhatsApp"
     },
 
     {

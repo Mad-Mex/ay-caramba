@@ -8,8 +8,9 @@ import { AboutUsPage } from "./pages/AboutUsPage/AboutUsPage";
 import { ContactPage } from "./pages/ContactPage/ContactPage";
 import { FigureDetailPage } from "./pages/FigureDetailPage/FigureDetailPage";
 import { PicturesDetailPage } from "./pages/PicturesDetailPage/PicturesDetailPage";
-import { ScrollToTop } from "./components/Navigation/ScrollToTop/ScrollToTop";
+import { WhatsappButton } from "./components/WhatsappButton/WhatsappButton";
 import "./App.css";
+
 
 
 
@@ -19,7 +20,7 @@ function App() {
     <>
     <div className="html">
     <BrowserRouter className="html">
-     
+
       <Header/>
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -30,6 +31,7 @@ function App() {
         <Route path="/nosotros" element={ <AboutUsPage /> }  />
         <Route path="/contacto" element={ <ContactPage /> }  />
       </Routes>
+      <WhatsappButton />
       <Footer />
 
     </BrowserRouter>

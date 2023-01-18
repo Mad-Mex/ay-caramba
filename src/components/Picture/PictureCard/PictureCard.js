@@ -1,10 +1,7 @@
 import { Link } from "react-router-dom"
 
 export const PictureCard = ({ picture }) => {
-  
-  const name = picture.name
-  const count = 21  
-  
+    
   return (
 
     <Link to={ `/detalle/cuadros/${ picture.id }` }  >
@@ -13,7 +10,7 @@ export const PictureCard = ({ picture }) => {
        cursor-pointer'>
         <img src={ picture.image } alt={ picture.name } className="w-full h-[16rem] rounded-xl"/>
         <h3 className="mt-11 text-2xl font-sans3 font-semibold text-center"> 
-        { name.slice(0, count) + (name.length > count ? "..." : "")  } </h3>
+        { picture.name } </h3>
       </div>
 
     </Link>
