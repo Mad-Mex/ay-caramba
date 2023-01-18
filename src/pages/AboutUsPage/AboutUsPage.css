@@ -7,3 +7,10 @@
     @apply mt-8 ml-0 mb-3 text-sm;
   }
 }
+
+@media only screen and (max-width: 1535px) {
+  .paddingImg {
+    padding-right: 0;
+    padding-bottom: 48px;
+  }
+}

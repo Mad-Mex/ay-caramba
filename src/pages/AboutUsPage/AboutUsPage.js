@@ -9,13 +9,27 @@ export const AboutUsPage = () => {
         <h1 className="mt-9 -mb-[1.625rem] text-[4rem] text-primaryLight text-center  uppercase font-semibold"> Nosotros </h1>
         <div className="mb-20 w-full h-3 bg-primaryLight"></div>
 
-        <div className='2xl:mx-32 pb-24 flex flex-col lg:flex-row mx-20'>
+        <div className='mx-24 pb-24 flex flex-col 2xl:flex-row'>
 
-          <div className='w-1/2 min-[280px]:w-full self-center'>
-            <img src='/images/ay_caramba_creadores.jpg' alt='creadores de Ay Caramba' className=' 2xl:w-[42.25rem] w-[31.25rem] lg:h-[25rem] rounded-2xl min-[280px]:w-full min-[1361px]: min-[280px]:h-full'    />
+          <div className='pr-12 self-center paddingImg'>
+            <div className='w-1/2 min-[280px]:w-full pb-12 drop-shadow-2xl'>
+              <img src='/images/ay_caramba_creadores.jpg' alt='creadores de Ay Caramba' className='rounded-2xl min-[280px]:w-full min-[280px]:h-full'/>
+            </div>
+            <div className='w-1/2 min-[280px]:w-full self-center drop-shadow-2xl'>
+              <img src='/images/ExpoViedma.png' alt='creadores de Ay Caramba' className='rounded-2xl min-[280px]:w-full min-[280px]:h-full'/>
+            </div>
           </div>
 
-          <div className='w-1/2 text-center min-[280px]:w-full'>
+          <div className='pr-12 self-center paddingImg'>
+            <div className='w-1/2 min-[280px]:w-full self-center pb-12 drop-shadow-2xl'>
+              <img src='/images/SofiyBru1.png' alt='creadores de Ay Caramba' className='rounded-2xl min-[280px]:w-full min-[280px]:h-full'/>
+            </div>
+            <div className='w-1/2 min-[280px]:w-full self-center drop-shadow-2xl'>
+              <img src='/images/Feria1.png' alt='creadores de Ay Caramba' className='rounded-2xl min-[280px]:w-full min-[280px]:h-full'/>
+            </div>
+          </div>
+
+          <div className='w-1/2 text-center min-[280px]:w-full self-center'>
             <p className='contact-text font-semibold'> ¡Hola! Somos Sofía y Bruno, creadores de la empresa <span className='text-black'> Ay Caramba!  </span> </p>
 
             <p className='contact-text font-semibold'> Esta pequeña empresa nace en el año 2019, en la Ciudad de la Plata; pero, pero para ser más precisos, la misma se comienza a gestar desde la niñez de uno de sus integrantes. </p>
