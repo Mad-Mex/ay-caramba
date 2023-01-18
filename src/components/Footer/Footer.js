@@ -13,7 +13,7 @@ const Footer = () => {
                         </a>
                     </button>
                     <button className="hover:drop-shadow-2xl duration-500">
-                        <a href="" target="_blank" rel='noopener noreferrer' >
+                        <a href="https://www.facebook.com/ay.caramba.arg?mibextid=ZbWKwL" target="_blank" rel='noopener noreferrer' >
                             <img className='facebookIcon' src="/images/facebookFooter.png" alt="" />
                         </a>
                     </button>

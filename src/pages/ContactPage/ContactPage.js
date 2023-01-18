@@ -32,7 +32,7 @@ export const ContactPage = () => {
                 </button>
 
                 <button className='mb-[4.875rem]'>
-                  <a href='' target="_blank" rel='noopener noreferrer'>
+                  <a href='https://www.facebook.com/ay.caramba.arg?mibextid=ZbWKwL' target="_blank" rel='noopener noreferrer'>
                     <img src='/images/facebook_color.png' alt='facebook' className='icon-social-media'/>
                   </a>
                   
@@ -40,7 +40,7 @@ export const ContactPage = () => {
                 </button>
 
                 <button className='mr-[10.3rem]'>
-                  <a href='' target="_blank" rel='noopener noreferrer'> 
+                  <a href='https://t.me/ay_caramba_arg' target="_blank" rel='noopener noreferrer'> 
                     <img src='/images/telegram.png' alt='instagram' className='icon-social-media'/>
                   </a>
                  
@@ -48,7 +48,7 @@ export const ContactPage = () => {
                 </button>
 
                  <button>
-                  <a href='' target="_blank" rel='noopener noreferrer' >
+                  <a href='https://wa.me/5492920248635' target="_blank" rel='noopener noreferrer' >
                     <img src='/images/whatsapp_color.png' alt='instagram' className='icon-social-media'/>
                   </a>
                   

@@ -93,7 +93,7 @@ export const ContactForm = () => {
 
                <div className='flex flex-col items-center mt-8 '>
                     <input
-                    className='w-[29rem] h-[2.625rem] rounded-full bg-tertiaryLight cursor-pointer text-center uppercase  placeholder:text-black hover:bg-tertiary'
+                    className='w-[29rem] h-[2.625rem] mb-12 rounded-full bg-tertiaryLight cursor-pointer text-center uppercase  placeholder:text-black hover:bg-tertiary'
                     placeholder='Enviar'
                     type="submit" 
                     />
