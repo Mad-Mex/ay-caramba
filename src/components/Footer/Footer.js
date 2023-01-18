@@ -19,7 +19,7 @@ const Footer = () => {
                     </button>
                     
                 </div>
-                <p className="pt-4 text-white">Whatsapp (+54 9 29 20 24 8634)</p>
+                <p className="pt-4 text-white">Whatsapp (+54 9 29 20 24 8635)</p>
             </div>
         </footer>
     )
