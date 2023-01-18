@@ -11,15 +11,16 @@ cuadros para decoración; todos ellos pintados a mano.
 -React-router-dom
 -Tailwind CSS
 -Firestore
+-EmailJs
 
 #### Orden recomendado para escribir las propiedades CSS en Tailwind
 
 1-Media queries
 2-Clases personalizadas
 3-Display
-4.Position
-5.Layout (top, bottom, right, left)
-6.Overflow
+4-Position
+5-Layout (top, bottom, right, left)
+6-Overflow
 7-Margin
 8-Padding
 9-Width
