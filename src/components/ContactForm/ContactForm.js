@@ -44,7 +44,7 @@ export const ContactForm = () => {
 
                <div className='flex flex-col items-center mb-6 '>
                     <input
-                    className='w-[29rem] h-[2.625rem] rounded-full border border-primary cursor-pointer text-center placeholder:text-black hover:border-primaryDark'
+                    className='w-full lg:w-[29rem] h-[2.625rem] rounded-full border border-primary cursor-pointer text-center placeholder:text-black hover:border-primaryDark'
                     placeholder='Nombre y apellido'
                     name="name"
                     type="text"
@@ -57,7 +57,7 @@ export const ContactForm = () => {
 
                <div className='flex flex-col items-center mb-6 '>
                     <input
-                    className='w-[29rem] h-[2.625rem] rounded-full border border-primary cursor-pointer text-center placeholder:text-black hover:border-primaryDark'
+                    className='w-full lg:w-[29rem] h-[2.625rem] rounded-full border border-primary cursor-pointer text-center placeholder:text-black hover:border-primaryDark'
                     placeholder='Correo' 
                     name="email"
                     type="text"
@@ -69,7 +69,7 @@ export const ContactForm = () => {
 
                <div className='flex flex-col items-center mb-6 '>
                     <input
-                    className='w-[29rem] h-[2.625rem] rounded-full border border-primary cursor-pointer text-center placeholder:text-black hover:border-primaryDark'
+                    className='w-full lg:w-[29rem] h-[2.625rem] rounded-full border border-primary cursor-pointer text-center placeholder:text-black hover:border-primaryDark'
                     placeholder='Teléfono'
                     name="phone"
                     type="text"
@@ -81,7 +81,7 @@ export const ContactForm = () => {
 
                <div className='flex flex-col items-center mb-8 '>
                     <textarea
-                    className='pt-[7.5rem] w-[29rem] h-[17rem] rounded-[1.2rem] border border-primary cursor-pointer text-center placeholder:text-black hover:border-primaryDark'
+                    className='pt-[7.5rem] w-full lg:w-[29rem] h-[17rem] rounded-[1.2rem] border border-primary cursor-pointer text-center placeholder:text-black hover:border-primaryDark'
                     name="message"
                     type="text"
                     onChange={ formik.handleChange }
@@ -93,7 +93,7 @@ export const ContactForm = () => {
 
                <div className='flex flex-col items-center mt-8 '>
                     <input
-                    className='w-[29rem] h-[2.625rem] mb-12 rounded-full bg-tertiaryLight cursor-pointer text-center uppercase  placeholder:text-black hover:bg-tertiary'
+                    className='w-full lg:w-[29rem] h-[2.625rem] mb-12 rounded-full bg-tertiaryLight cursor-pointer text-center uppercase  placeholder:text-black hover:bg-tertiary'
                     placeholder='Enviar'
                     type="submit" 
                     />
