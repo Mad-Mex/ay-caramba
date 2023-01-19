@@ -21,7 +21,7 @@ export const FigureDetailContainer = () => {
     
   return (
 
-    <div className='flex mx-56'>
+    <div className='flex flex-col lg:flex-row items-center mx-0 lg:mx-56'>
         
         { loading ? <Loader /> : 
            
