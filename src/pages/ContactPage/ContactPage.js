@@ -4,14 +4,14 @@ import "./ContactPage.css"
 
 export const ContactPage = () => {
   return (
-    <div>
-        <h1 className="mt-9 -mb-[1.625rem] text-[4rem] text-primaryLight text-center  uppercase font-semibold"> Contacto </h1>
+    <div className='overflow-hidden'>
+        <h1 className="mt-9 -mb-[1.25rem] sm:-mb-[1.625rem] text-[3rem] sm:text-[4rem] text-primaryLight text-center  uppercase font-semibold"> Contacto </h1>
         <div className="mb-12 w-full h-3 bg-primaryLight"></div>
 
         <div className='flex flex-col lg:flex-row items-center'>
 
             { /* Form  */ }
-            <div className='w-1/2'>
+            <div className='w-3/4 sm:w-1/2'>
               <ContactForm />
             </div>
 

@@ -6,7 +6,7 @@ export const AboutUsPage = () => {
   return (
 
     <div>
-        <h1 className="mt-9 -mb-[1.625rem] text-[4rem] text-primaryLight text-center  uppercase font-semibold"> Nosotros </h1>
+        <h1 className="mt-9 -mb-[1.25rem] sm:-mb-[1.625rem] text-[3rem] sm:text-[4rem] text-primaryLight text-center  uppercase font-semibold"> Nosotros </h1>
         <div className="mb-20 w-full h-3 bg-primaryLight"></div>
 
         <div className='mx-24 mediaText pb-24 flex flex-col 2xl:flex-row'>
